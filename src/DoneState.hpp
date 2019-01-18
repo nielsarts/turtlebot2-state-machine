@@ -2,25 +2,19 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
-#include "BusState.h"
+#include "StateMonitor.hpp.h"
 
-namespace bus_monitor {
+namespace StateMachine {
 
-class DiscoveryBusState: public BusState {
+class DoneState: public State {
 private:
-    static S_BusState instance;
+    static S_State instance;
 public:
-    DiscoveryBusState();
-    virtual ~DiscoveryBusState();
-    virtual void Entry(EcatBus* context);
-    virtual void Exit(EcatBus* context);
-    virtual void Start(EcatBus* context);
-    virtual void Stop(EcatBus* context);
-    virtual void BusReady(EcatBus* context);
-    virtual void BusNotReady(EcatBus* context);
-    static S_BusState Instance();
+    DoneState();
+    virtual ~DoneState();
+    virtual void allDone(StateMonitor* context);
+    static S_State Instance();
 };
 
 } /* namespace bus_monitor */
 
-#endif /* DISCOVERYBUSSTATE_H_ */

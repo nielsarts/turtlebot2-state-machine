@@ -14,4 +14,4 @@ State::~State() {
     // TODO Auto-generated destructor stub
 }
 
-} /* namespace bus_monitor */
+}

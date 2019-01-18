@@ -10,14 +10,12 @@
 namespace StateMachine {
 
 StateMonitor::StateMonitor(ObjectAdmin &t_ObjectAdmin) :
-		ObjectAdmin(t_ObjectAdmin), state(DeactivatedBusState::Instance()) {
+		ObjectAdmin(t_ObjectAdmin) {
 	// TODO Auto-generated constructor stub
-	Entry(state, S_BusState());
 }
 
 	StateMonitor::~StateMonitor() {
 	// TODO Auto-generated destructor stub
-//	Exit(state, S_BusState());
 }
 
 
