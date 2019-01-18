@@ -9,16 +9,10 @@
 #include <iostream>
 
 namespace StateMachine {
-
-EcatBus::EcatBus(EcatSlaveAdmin &t_SlaveAdmin) :
-		SlaveAdmin(t_SlaveAdmin), state(DeactivatedBusState::Instance()) {
+	StateMonitor::StateMonitor(ObjectAdmin &t_ObjectAdmin) :
+		object_admin(t_ObjectAdmin), state(IdleState::Instance()) {
 	// TODO Auto-generated constructor stub
-	Entry(state, S_BusState());
-}
-
-StateMonitor::StateMonitor(ObjectAdmin &t_ObjectAdmin) :
-		ObjectAdmin(t_ObjectAdmin), state(IdleState::Instance()) {
-	// TODO Auto-generated constructor stub
+//	Entry(state, S_BusState());
 }
 
 StateMonitor::~StateMonitor() {
