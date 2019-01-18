@@ -14,7 +14,7 @@ namespace StateMachine {
 	public:
 		ObjectAdmin &ObjectAdmin;
 
-		StateMonitor(ObjectAdmin &);
+		StateMonitor(ObjectAdmin &t_ObjectAdmin);
 
 		virtual ~StateMonitor();
 

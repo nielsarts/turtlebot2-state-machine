@@ -2,6 +2,7 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
+
 #include "StateMonitor.hpp"
 
 #include "States.hpp"
@@ -14,7 +15,7 @@ StateMonitor::StateMonitor(ObjectAdmin &t_ObjectAdmin) :
 	// TODO Auto-generated constructor stub
 }
 
-	StateMonitor::~StateMonitor() {
+StateMonitor::~StateMonitor() {
 	// TODO Auto-generated destructor stub
 }
 
