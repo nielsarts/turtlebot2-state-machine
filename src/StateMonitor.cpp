@@ -9,7 +9,7 @@
 #include <iostream>
 
 namespace StateMachine {
-	StateMonitor::StateMonitor(ObjectAdmin &t_ObjectAdmin) :
+	StateMonitor::StateMonitor(ObjectAdmin t_ObjectAdmin) :
 		object_admin(t_ObjectAdmin), state(IdleState::Instance()) {
 	// TODO Auto-generated constructor stub
 //	Entry(state, S_BusState());
