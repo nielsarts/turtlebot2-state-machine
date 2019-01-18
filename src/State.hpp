@@ -9,23 +9,19 @@ namespace StateMachine {
 
 class State;
 typedef std::shared_ptr<State> S_State;
-//class EcatBus;
+class StateMonitor;
 
 class State {
 protected:
     State(std::string name);
-    State(std::string name, S_BusState parent);
 public:
     std::string name;
-    S_State parent;
 
     virtual ~State();
-    virtual void Entry(EcatBus* context) = 0;
-    virtual void Exit(EcatBus* context) = 0;
-    virtual void Start(EcatBus* context) {};
-    virtual void Stop(EcatBus* context) {};
-    virtual void BusReady(EcatBus* context) {};
-    virtual void BusNotReady(EcatBus* context) {};
+//    virtual void Start(StateMonitor* context) {};
+//    virtual void Stop(StateMonitor* context) {};
+//    virtual void BusReady(StateMonitor* context) {};
+    virtual void allDone(StateMonitor* context) {};
 };
 
 } /* namespace bus_monitor */

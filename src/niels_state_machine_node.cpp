@@ -5,6 +5,7 @@
 #include "std_msgs/String.h"
 #include "ObjectAdmin.hpp"
 #include "Object.hpp"
+#include "StateMonitor.hpp"
 
 #include <sstream>
 #include <iostream>
@@ -90,6 +91,9 @@ int main(int argc, char **argv)
     object_admin.objectDone(object_admin.getNextObject());
 
     std::cout << "Next Object: " << object_admin.getNextObject() << std::endl;
+
+
+    StateMonitor state_monitor(object_admin);
 
     int count = 0;
     while (ros::ok())

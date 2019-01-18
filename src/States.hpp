@@ -4,4 +4,6 @@
 
 
 #include "DoneState.hpp"
-
+#include "ExploreState.hpp"
+#include "IdleState.hpp"
+#include "ObjectHandelingState.hpp"

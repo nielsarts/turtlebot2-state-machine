@@ -6,13 +6,8 @@
 
 namespace StateMachine {
 
-State::State(std::string name) : name(name), parent() {
+State::State(std::string name) : name(name) {
     // TODO Auto-generated constructor stub
-}
-
-State::State(std::string name, S_BusState parent) : name(name), parent(parent) {
-    // TODO Auto-generated constructor stub
-
 }
 
 State::~State() {
