@@ -33,7 +33,7 @@ S_State IdleState::Instance() {
 	return instance;
 }
 
-} /* namespace bus_monitor */
+}
 //void DoneState::Stop(EcatBus* context) {
 //	context->ChangeState(DeactivatedBusState::Instance(), S_BusState());
 //}
