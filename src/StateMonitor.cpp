@@ -21,7 +21,7 @@ StateMonitor::~StateMonitor() {
 
 void StateMonitor::allDone() {
 	std::cout << state->name << ": allDone()" << std::endl;
-	state->alldone(this);
+	state->allDone(this);
 }
 
 void StateMonitor::ChangeState(S_State target) {
