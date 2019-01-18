@@ -2,7 +2,6 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
-#include "StateMonitor.hpp.hpp"
 #include "ObjectAdmin.hpp"
 
 namespace StateMachine {

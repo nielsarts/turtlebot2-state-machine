@@ -2,7 +2,7 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
-#include "StateMonitor.hpp.h"
+#include "StateMonitor.hpp"
 
 namespace StateMachine {
 
