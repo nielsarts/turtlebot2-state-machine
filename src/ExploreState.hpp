@@ -15,7 +15,7 @@ private:
 public:
     ExploreState();
     virtual ~ExploreState();
-    virtual void allDone(StateMonitor* context);
+    virtual void newObject(StateMonitor* context);
     static S_State Instance();
 };
 

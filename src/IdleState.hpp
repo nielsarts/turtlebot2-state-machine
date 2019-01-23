@@ -15,7 +15,8 @@ private:
 public:
     IdleState();
     virtual ~IdleState();
-    virtual void allDone(StateMonitor* context);
+    virtual void allDone(StateMonitor* context)
+    virtual void notDone(StateMonitor* context);
     static S_State Instance();
 };
 

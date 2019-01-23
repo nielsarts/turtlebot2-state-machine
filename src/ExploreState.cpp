@@ -19,8 +19,8 @@ namespace StateMachine {
 	// TODO Auto-generated destructor stub
 }
 
-void ExploreState::allDone(StateMonitor* context) {
-	context->ChangeState(DoneState::Instance());
+void ExploreState::newObject(StateMonitor* context) {
+	context->ChangeState(ObjectHandelingState::Instance());
 
 }
 

@@ -15,7 +15,7 @@ private:
 public:
     ObjectHandelingState();
     virtual ~ObjectHandelingState();
-    virtual void allDone(StateMonitor* context);
+    virtual void objectFinished(StateMonitor* context);
     static S_State Instance();
 };
 

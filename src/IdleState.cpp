@@ -24,6 +24,11 @@ void IdleState::allDone(StateMonitor* context) {
 
 }
 
+void IdleState::notDone(StateMonitor* context) {
+	context->ChangeState(ExploreState::Instance());
+
+}
+
 S_State IdleState::instance;
 
 S_State IdleState::Instance() {
