@@ -34,11 +34,3 @@ S_State IdleState::Instance() {
 }
 
 }
-//void DoneState::Stop(EcatBus* context) {
-//	context->ChangeState(DeactivatedBusState::Instance(), S_BusState());
-//}
-//
-//void DoneState::BusReady(EcatBus* context) {
-//	context->ChangeState(DiscoveredBusState::Instance(),
-//						 ActivatedBusState::Instance());
-//}

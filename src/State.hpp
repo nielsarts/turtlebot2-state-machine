@@ -9,7 +9,7 @@ namespace StateMachine {
 
     class State;
 
-    typedef std::shared_ptr <State> S_State;
+    typedef std::shared_ptr<State> S_State;
 
     class StateMonitor;
 

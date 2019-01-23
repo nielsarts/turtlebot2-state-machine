@@ -18,5 +18,4 @@ public:
     static S_State Instance();
 };
 
-} /* namespace bus_monitor */
-
+}
