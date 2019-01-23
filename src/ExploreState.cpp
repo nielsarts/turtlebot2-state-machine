@@ -9,13 +9,13 @@
 
 namespace StateMachine {
 
-	ExploreState::ExploreState() () :
+	ExploreState::ExploreState() :
 		State("EXPLORE") {
 	// TODO Auto-generated constructor stub
 
 }
 
-	ExploreState::~IdleState() {
+	ExploreState::~ExploreState() {
 	// TODO Auto-generated destructor stub
 }
 
