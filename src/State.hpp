@@ -23,6 +23,10 @@ namespace StateMachine {
 //    virtual void Stop(StateMonitor* context) {};
 //    virtual void BusReady(StateMonitor* context) {};
         virtual void allDone(StateMonitor* context) {};
+        virtual void newObject(StateMonitor* context) {};
+        virtual void objectFinished(StateMonitor* context) {};
+        virtual void notDone(StateMonitor* context) {};
+        virtual void start(StateMonitor* context) {};
     };
 
 }
