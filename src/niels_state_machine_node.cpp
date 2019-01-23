@@ -95,6 +95,8 @@ int main(int argc, char **argv)
 
     StateMonitor state_monitor(object_admin);
 
+    state_monitor.allDone();
+
     int count = 0;
     while (ros::ok())
     {
