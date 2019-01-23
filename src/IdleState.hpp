@@ -12,7 +12,6 @@ private:
 protected:
     IdleState();
 public:
-    ~IdleState();
     virtual ~IdleState();
     virtual void allDone(StateMonitor* context);
     static S_State Instance();

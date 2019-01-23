@@ -13,7 +13,6 @@ private:
 protected:
     DoneState();
 public:
-    ~DoneState();
     virtual ~DoneState();
     virtual void allDone(StateMonitor* context);
     static S_State Instance();
