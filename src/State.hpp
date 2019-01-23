@@ -25,7 +25,7 @@ namespace StateMachine {
 //    virtual void Start(StateMonitor* context) {};
 //    virtual void Stop(StateMonitor* context) {};
 //    virtual void BusReady(StateMonitor* context) {};
-        virtual void allDone(StateMonitor *context) {};
+        virtual void allDone(StateMonitor* context) {};
     };
 
 }

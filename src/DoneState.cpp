@@ -9,13 +9,13 @@
 
 namespace StateMachine{
 
-	DoneState::DoneState() :
+DoneState::DoneState() :
 		State("DONE") {
 	// TODO Auto-generated constructor stub
 
 }
 
-	DoneState::~DoneState() {
+DoneState::~DoneState() {
 	// TODO Auto-generated destructor stub
 }
 

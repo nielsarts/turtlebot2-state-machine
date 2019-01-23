@@ -12,9 +12,9 @@ namespace StateMachine {
 		S_State state;
 
 	public:
-		ObjectAdmin object_admin;
+		ObjectAdmin &object_admin;
 
-		StateMonitor(ObjectAdmin t_ObjectAdmin);
+		StateMonitor(ObjectAdmin &);
 
 		virtual ~StateMonitor();
 

@@ -93,7 +93,7 @@ int main(int argc, char **argv)
     std::cout << "Next Object: " << object_admin.getNextObject() << std::endl;
 
 
-//    StateMonitor state_monitor(object_admin);
+    StateMonitor state_monitor(object_admin);
 
     int count = 0;
     while (ros::ok())
