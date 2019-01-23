@@ -7,7 +7,7 @@
 #include "States.hpp"
 #include "StateMonitor.hpp"
 
-namespace StateMachine{
+namespace StateMachine {
 
 	IdleState::IdleState() :
 		State("IDLE") {
