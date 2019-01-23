@@ -2,6 +2,10 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
+#ifndef STATEMACHINE_DONESTATE_HPP
+#define STATEMACHINE_DONESTATE_HPP
+
+
 #include "State.hpp"
 
 
@@ -19,3 +23,5 @@ public:
 };
 
 }
+
+#endif

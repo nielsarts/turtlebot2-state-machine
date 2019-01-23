@@ -2,6 +2,9 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
+#ifndef STATEMACHINE_STATEMONITOR_HPP
+#define STATEMACHINE_STATEMONITOR_HPP
+
 #include "State.hpp"
 #include "ObjectAdmin.hpp"
 
@@ -25,3 +28,5 @@ namespace StateMachine {
 	};
 
 }
+
+#endif

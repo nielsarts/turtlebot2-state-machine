@@ -2,6 +2,9 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
+#ifndef STATEMACHINE_STATE_HPP
+#define STATEMACHINE_STATE_HPP
+
 #include <string>
 #include <memory>
 
@@ -23,3 +26,5 @@ namespace StateMachine {
     };
 
 }
+
+#endif
