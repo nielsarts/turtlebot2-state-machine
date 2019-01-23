@@ -9,8 +9,10 @@ namespace StateMachine {
 class DoneState: public State {
 private:
     static S_State instance;
-public:
+protected:
     DoneState();
+public:
+    ~DoneState();
     virtual ~DoneState();
     virtual void allDone(StateMonitor* context);
     static S_State Instance();
