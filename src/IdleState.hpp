@@ -2,7 +2,7 @@
 // Created by Niels Arts on 18/01/2019.
 //
 
-#include "StateMonitor.hpp"
+#include "State.hpp"
 
 namespace StateMachine {
 
@@ -18,5 +18,5 @@ public:
     static S_State Instance();
 };
 
-} /* namespace bus_monitor */
+}
 
