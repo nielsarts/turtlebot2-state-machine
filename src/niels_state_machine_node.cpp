@@ -1,7 +1,11 @@
+//
+// Created by Niels Arts on 17/01/2019.
+//
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include "ObjectAdmin.hpp"
 #include "Object.hpp"
+#include "StateMonitor.hpp"
 
 #include <sstream>
 #include <iostream>
@@ -87,6 +91,11 @@ int main(int argc, char **argv)
     object_admin.objectDone(object_admin.getNextObject());
 
     std::cout << "Next Object: " << object_admin.getNextObject() << std::endl;
+
+
+    StateMonitor state_monitor(object_admin);
+
+    state_monitor.allDone();
 
     int count = 0;
     while (ros::ok())
