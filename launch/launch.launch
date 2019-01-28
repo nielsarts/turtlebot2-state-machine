@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="niels_state_machine" type="niels_state_machine_node" name="niels_state_machine_node" output="screen">
+  </node>
+</launch>
