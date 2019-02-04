@@ -1,5 +1,5 @@
 // Bring in my package's API, which is what I'm testing
-#include "niels_state_machine/niels_state_machine_node.cpp"
+#include "src/niels_state_machine_node.cpp"
 // Bring in gtest
 #include <gtest/gtest.h>
 
