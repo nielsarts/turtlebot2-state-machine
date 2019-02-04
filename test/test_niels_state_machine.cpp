@@ -1,5 +1,4 @@
 // Bring in my package's API, which is what I'm testing
-#include "foo/foo.h"
 // Bring in gtest
 #include <gtest/gtest.h>
 
