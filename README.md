@@ -1,4 +1,5 @@
 # turtlebot2-state-machine
+[![Build Status](https://travis-ci.org/nielsarts/turtlebot2-state-machine.svg?branch=master)](https://travis-ci.org/nielsarts/turtlebot2-state-machine)
 ![](https://img.shields.io/github/license/nielsarts/turtlebot2-state-machine.svg?style=flat)
 
 ## Overview
