@@ -10,7 +10,7 @@ This Packages is a state machine for the Turtlebot robot during Project Robotics
 
 ### License
 
-The source code is released under a [BSD 2-Clause license](ros_package_template/LICENSE).
+The source code is released under a [BSD 2-Clause license](/LICENSE).
 
 **Author: Niels Arts, Niels.Arts@HvA.nl<br />**
 
