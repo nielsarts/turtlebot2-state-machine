@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 .idea/
+=======
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+>>>>>>> af5cea77f56fc82adf5a50033f073ff38abc28b3
