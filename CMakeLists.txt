@@ -191,17 +191,6 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
-
- add_library(coverage_config INTERFACE)
-
- target_compile_options(coverage_config INTERFACE
-         -O0        # no optimization
-         -g         # generate debug info
-         --coverage # sets all required flags
-         )
-
-target_link_libraries(coverage_config INTERFACE --coverage)
-
  if(CATKIN_ENABLE_TESTING)
   catkin_add_gtest(${PROJECT_NAME}-test test/test_niels_state_machine.cpp)
  endif()
