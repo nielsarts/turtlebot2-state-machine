@@ -125,7 +125,7 @@ script:
   - catkin_make $( [ -f $CATKIN_OPTIONS ] && cat $CATKIN_OPTIONS )
   # Run the tests, ensuring the path is set correctly.
   - source devel/setup.bash
-  - roscore
+  - roscore &
   - catkin_make run_tests && catkin_test_results
   
 after_success:
@@ -136,6 +136,6 @@ after_success:
   # Uploading report to CodeCov
   - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
   
-notifications:
-  email:
-    - niels.arts@hva.nl
+#notifications:
+#  email:
+#    - niels.arts@hva.nl
