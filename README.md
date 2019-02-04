@@ -12,13 +12,9 @@ This Packages is a state machine for the Turtlebot robot during Project Robotics
 
 The source code is released under a [BSD 2-Clause license](ros_package_template/LICENSE).
 
-**Author: Niels Arts<br />
-Affiliation: [ANYbotics](https://www.anybotics.com/)<br />
-Maintainer: Péter Fankhauser, pfankhauser@anybotics.com**
+**Author: Niels Arts, Niels.Arts@HvA.nl<br />
 
-The PACKAGE NAME package has been tested under [ROS] Kinetic and Ubuntu 16.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
-
-[![Build Status](http://rsl-ci.ethz.ch/buildStatus/icon?job=ros_best_practices)](http://rsl-ci.ethz.ch/job/ros_best_practices/)
+The turtlebot2-state-machine package has been tested under [ROS] Kinetic and Ubuntu 16.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
 
 
 ## Installation
@@ -48,20 +44,13 @@ catkin_make
 ```
 
 
-### Unit Tests
-
-Run the unit tests with
-
-	catkin_make run_tests_ros_package_template
-
-
 ## Usage
 
 Describe the quickest way to run this software, for example:
 
 Run the main node with
 
-	roslaunch ros_package_template ros_package_template.launch
+	roslaunch niels_state_machine launch.launch
   
 
 ## Launch files
@@ -78,18 +67,6 @@ Run the main node with
 
 * **...**
 
-## Nodes
-
-### niels_state_machine_node
-
-
-#### Subscribed Topics
-
-...
-
-#### Published Topics
-
-...
 
 
 ## Bugs & Feature Requests
