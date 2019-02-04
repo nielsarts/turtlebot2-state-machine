@@ -12,7 +12,7 @@ This Packages is a state machine for the Turtlebot robot during Project Robotics
 
 The source code is released under a [BSD 2-Clause license](ros_package_template/LICENSE).
 
-**Author: Niels Arts, Niels.Arts@HvA.nl<br />
+**Author: Niels Arts, Niels.Arts@HvA.nl<br />**
 
 The turtlebot2-state-machine package has been tested under [ROS] Kinetic and Ubuntu 16.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
 
@@ -51,21 +51,6 @@ Describe the quickest way to run this software, for example:
 Run the main node with
 
 	roslaunch niels_state_machine launch.launch
-  
-
-## Launch files
-
-* **launch_file_1.launch:** shortly explain what is launched (e.g standard simulation, simulation with gdb,...)
-
-     Argument set 1
-
-     - **`argument_1`** Short description (e.g. as commented in launch file). Default: `default_value`.
-
-    Argument set 2
-
-    - **`...`**
-
-* **...**
 
 
 
