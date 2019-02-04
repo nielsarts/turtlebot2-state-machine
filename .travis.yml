@@ -79,7 +79,7 @@ before_install:
   - sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
   - sudo apt-get update -qq
   - sudo apt-get install dpkg
-  - sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-ros-base
+  - sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-ros-base lcov
   - source /opt/ros/$ROS_DISTRO/setup.bash
   # Prepare rosdep to install dependencies.
   - sudo rosdep init
@@ -125,14 +125,15 @@ script:
   - catkin_make $( [ -f $CATKIN_OPTIONS ] && cat $CATKIN_OPTIONS )
   # Run the tests, ensuring the path is set correctly.
   - source devel/setup.bash
-  - roscore &
-  - catkin_make run_tests && catkin_test_results
+#  - catkin_make run_tests && catkin_test_results
+  - catkin_make run_tests_niels_state_machine
   
 after_success:
-  - cd ${TRAVIS_BUILD_DIR}
-  - lcov --directory . --capture --output-file coverage.info # capture coverage info
-  - lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out system
-  - lcov --list coverage.info #debug info
+  - lcov --directory . --capture --output-file coverage.info
+  #  - lcov --remove coverage.info '/usr/*' '/opt/*' '/src/expressiongraph/*' '/src/qpoases/*' '/src/giskard_core/test/*' --output-file coverage.info # filter out unrelated code
+  - lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out unrelated code
+  - ls
+  - lcov --list coverage.info # debug before upload
   # Uploading report to CodeCov
   - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
   
