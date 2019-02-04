@@ -192,6 +192,8 @@ include_directories(
 
 ## Add gtest based cpp test target and link libraries
 
+ add_library(coverage_config INTERFACE)
+
  target_compile_options(coverage_config INTERFACE
          -O0        # no optimization
          -g         # generate debug info
