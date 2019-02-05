@@ -191,6 +191,9 @@ include_directories(
 #############
 
 ## Add gtest based cpp test target and link libraries
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
+set(CMAKE_CXX_OUTPUT_EXTENSION_REPLACE 1)
+
  if(CATKIN_ENABLE_TESTING)
   catkin_add_gtest(${PROJECT_NAME}-test test/test_niels_state_machine.cpp)
  endif()
