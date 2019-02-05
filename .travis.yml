@@ -70,6 +70,7 @@ env:
     # Set the python path manually to include /usr/-/python2.7/dist-packages
     # as this is where apt-get installs python packages.
     - PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages:/usr/local/lib/python2.7/dist-packages
+    - CODECOV_TOKEN="66978bfa-3413-4015-b453-fd3b9de1f6aa"
 
 ################################################################################
 
