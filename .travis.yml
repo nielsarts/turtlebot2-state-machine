@@ -133,7 +133,7 @@ script:
   - catkin_make run_tests_niels_state_machine
   
 after_success:
-  - lcov --directory . --capture --output-file coverage.info
+  - lcov --directory . --capture --output-file coverage.info -X gcov
   #  - lcov --remove coverage.info '/usr/*' '/opt/*' '/src/expressiongraph/*' '/src/qpoases/*' '/src/giskard_core/test/*' --output-file coverage.info # filter out unrelated code
   - lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out unrelated code
   - ls
