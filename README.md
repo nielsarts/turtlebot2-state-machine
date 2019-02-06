@@ -1,4 +1,5 @@
 # turtlebot2-state-machine
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f306f0049675404d8b73a301582e6c07)](https://app.codacy.com/app/nielsarts/turtlebot2-state-machine?utm_source=github.com&utm_medium=referral&utm_content=nielsarts/turtlebot2-state-machine&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/nielsarts/turtlebot2-state-machine.svg?branch=master)](https://travis-ci.org/nielsarts/turtlebot2-state-machine)
 ![](https://img.shields.io/github/license/nielsarts/turtlebot2-state-machine.svg?style=flat)
 [![codecov](https://codecov.io/gh/nielsarts/turtlebot2-state-machine/branch/master/graph/badge.svg)](https://codecov.io/gh/nielsarts/turtlebot2-state-machine)
