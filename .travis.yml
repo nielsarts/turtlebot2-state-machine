@@ -88,6 +88,8 @@ before_install:
   # Prepare rosdep to install dependencies.
   - sudo rosdep init
   - rosdep update
+  - git config --global user.name "Niels Arts"
+  - git config --global user.email "Niels.Arts@HvA.nl"
 
 # Create a catkin workspace with the package under integration.
 install:
