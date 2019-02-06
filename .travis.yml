@@ -141,7 +141,7 @@ after_success:
   - lcov --list coverage.info # debug before upload
   # Uploading report to CodeCov
   - cat ./coverage.info
-  - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
+  - bash <(curl -s https://codecov.io/bash) -X gcov || echo "Codecov did not collect coverage reports"
   
 #notifications:
 #  email:
