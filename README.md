@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/nielsarts/turtlebot2-state-machine.svg?branch=master)](https://travis-ci.org/nielsarts/turtlebot2-state-machine)
 ![](https://img.shields.io/github/license/nielsarts/turtlebot2-state-machine.svg?style=flat)
 [![codecov](https://codecov.io/gh/nielsarts/turtlebot2-state-machine/branch/master/graph/badge.svg)](https://codecov.io/gh/nielsarts/turtlebot2-state-machine)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4bc3c2a677ff45ee83ddd50511949a11)](https://www.codacy.com/app/nielsarts/turtlebot2-state-machine?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nielsarts/turtlebot2-state-machine&amp;utm_campaign=Badge_Grade)
 
 ## Overview
 Mirror of gitlab https://gitlab.twizzel.net/ros/turtlebot2-state-machine
